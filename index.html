@@ -1,42 +1,54 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#172b25">
-  <meta name="description" content="Mayan Nomads by Shuttle Vacation. Experiencias, naturaleza, cultura y descubrimiento en la Península de Yucatán y el Caribe Mexicano.">
-  <title>Mayan Nomads | Conecta, Descubre, Trasciende</title>
+  <meta name="theme-color" content="#18372e">
+  <meta name="description" content="Mayan Nomads by Shuttle Vacation. Descubre experiencias, naturaleza, cultura y destinos en la Península de Yucatán y el Caribe Mexicano. Conecta. Descubre. Trasciende.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mayan Nomads — Conecta. Descubre. Trasciende.">
+  <meta property="og:description" content="Descubre la Península de Yucatán y el Caribe Mexicano desde otra perspectiva.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85">
+  <title>Mayan Nomads | Experiencias en Yucatán y el Caribe</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Mayan Nomads, inicio">
-      <span class="brand-mark">MN</span>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Mayan Nomads, inicio">
+      <span class="brand-mark" aria-hidden="true">MN</span>
       <span class="brand-name">MAYAN NOMADS<small>BY SHUTTLE VACATION</small></span>
     </a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a href="#experiencias">Experiencias</a><a href="#destinos">Destinos</a><a href="#filosofia">Nuestra esencia</a><a class="nav-cta" href="#contacto">Planea tu viaje <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#experiencias">Experiencias</a><a href="#destinos">Destinos</a><a href="#esencia">Nuestra esencia</a><a class="nav-cta" href="#contacto">Planea tu viaje <span>↗</span></a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-image" role="img" aria-label="Paisaje tropical de la península de Yucatán"></div>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Mar turquesa del Caribe Mexicano"></div>
       <div class="hero-shade"></div>
       <div class="hero-content">
         <p class="eyebrow light">THE YUCATÁN EXPERIENCE</p>
-        <h1>El destino tiene<br><em>mucho que contar.</em></h1>
+        <h1 id="hero-title">El destino tiene<br><em>mucho que contar.</em></h1>
         <p class="hero-copy">Ve más allá de lo conocido. Descubre lugares, conecta con historias y vive la península a tu manera.</p>
         <a class="button button-light" href="#experiencias">Explora las experiencias <span>↓</span></a>
       </div>
-      <div class="hero-bottom"><span>MÉXICO · PENÍNSULA DE YUCATÁN</span><span>21°10' N — 86°51' W</span></div>
+      <div class="hero-bottom"><span>MÉXICO · PENÍNSULA DE YUCATÁN</span><span>CON不同 · DISCOVER · GO FURTHER</span></div>
+      <a class="hero-scroll" href="#esencia" aria-label="Desplazarse hacia abajo">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
 
-    <section class="intro section-wrap" id="filosofia">
+    <div class="marquee" aria-label="Conecta, descubre, trasciende">
+      <div class="marquee-track"><span>CONECTA</span><i>✳</i><span>DESCUBRE</span><i>✳</i><span>TRASCIENDE</span><i>✳</i><span>CONECTA</span><i>✳</i><span>DESCUBRE</span><i>✳</i><span>TRASCIENDE</span><i>✳</i></div>
+    </div>
+
+    <section class="intro section-wrap" id="esencia">
       <div class="section-kicker">01 / NUESTRA ESENCIA</div>
       <div class="intro-copy">
         <p class="eyebrow">NO SOLO VISITES. CONECTA.</p>
@@ -51,24 +63,36 @@
         <div><div class="section-kicker">02 / DESCUBRE A TU MANERA</div><p class="eyebrow">EXPERIENCIAS QUE DEJAN HUELLA</p><h2>Encuentra tu <em>próxima historia.</em></h2></div>
         <p class="heading-note">Naturaleza, cultura y aventura. Una península, infinitas formas de vivirla.</p>
       </div>
-      <div class="experience-grid">
-        <a class="experience-card card-wide" href="#contacto">
-          <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1500&q=85" alt="Agua turquesa y paisaje tropical">
-          <span class="card-index">01 — NATURALEZA</span><span class="card-caption"><strong>Donde la naturaleza te encuentra</strong><small>Cenotes · Playas · Reservas naturales</small></span><span class="card-arrow">↗</span>
-        </a>
-        <a class="experience-card" href="#contacto">
-          <img src="https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1000&q=85" alt="Arquitectura y patrimonio maya">
-          <span class="card-index">02 — CULTURA</span><span class="card-caption"><strong>Historias que siguen vivas</strong><small>Patrimonio · Comunidades · Tradición</small></span><span class="card-arrow">↗</span>
-        </a>
-        <a class="experience-card" href="#contacto">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="Aventura en un paisaje natural">
-          <span class="card-index">03 — AVENTURA</span><span class="card-caption"><strong>Sal de la ruta habitual</strong><small>Exploración · Aire libre · Adrenalina</small></span><span class="card-arrow">↗</span>
-        </a>
+      <div class="filter-row" role="group" aria-label="Filtrar experiencias">
+        <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="filter-chip" type="button" data-filter="naturaleza" aria-pressed="false">Naturaleza</button>
+        <button class="filter-chip" type="button" data-filter="cultura" aria-pressed="false">Cultura</button>
+        <button class="filter-chip" type="button" data-filter="aventura" aria-pressed="false">Aventura</button>
+        <button class="filter-chip" type="button" data-filter="agua" aria-pressed="false">Agua y costa</button>
       </div>
+      <div class="experience-grid">
+        <article class="experience-card card-wide" data-category="naturaleza agua">
+          <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1500&q=85" alt="Agua turquesa rodeada de vegetación tropical" loading="lazy">
+          <span class="card-index">01 — NATURALEZA</span><div class="card-caption"><strong>Donde la naturaleza te encuentra</strong><small>Cenotes · Playas · Reservas naturales</small></div><a class="card-arrow" href="#contacto" aria-label="Consultar experiencias de naturaleza">↗</a>
+        </article>
+        <article class="experience-card" data-category="cultura">
+          <img src="https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1000&q=85" alt="Vestigios arqueológicos de la cultura maya" loading="lazy">
+          <span class="card-index">02 — CULTURA</span><div class="card-caption"><strong>Historias que siguen vivas</strong><small>Patrimonio · Comunidades · Tradición</small></div><a class="card-arrow" href="#contacto" aria-label="Consultar experiencias culturales">↗</a>
+        </article>
+        <article class="experience-card" data-category="aventura naturaleza">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="Paisaje natural para explorar al aire libre" loading="lazy">
+          <span class="card-index">03 — AVENTURA</span><div class="card-caption"><strong>Sal de la ruta habitual</strong><small>Exploración · Aire libre · Adrenalina</small></div><a class="card-arrow" href="#contacto" aria-label="Consultar experiencias de aventura">↗</a>
+        </article>
+        <article class="experience-card" data-category="agua naturaleza">
+          <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85" alt="Olas del mar en una costa tropical" loading="lazy">
+          <span class="card-index">04 — AGUA Y COSTA</span><div class="card-caption"><strong>Déjate llevar por el Caribe</strong><small>Mar · Islas · Paisajes costeros</small></div><a class="card-arrow" href="#contacto" aria-label="Consultar experiencias de agua y costa">↗</a>
+        </article>
+      </div>
+      <p class="catalog-note">Las categorías muestran ideas de experiencias. Consulta con nuestro equipo las actividades, operadores, fechas y disponibilidad vigentes.</p>
     </section>
 
     <section class="destinations" id="destinos">
-      <div class="destinations-image"></div>
+      <div class="destinations-image" role="img" aria-label="Paisaje natural de la península de Yucatán"></div>
       <div class="destinations-content">
         <div class="section-kicker light">03 / UN TERRITORIO POR DESCUBRIR</div>
         <p class="eyebrow light">DEL CARIBE A LA SELVA</p>
@@ -79,32 +103,77 @@
       </div>
     </section>
 
+    <section class="destination-strip section-wrap" aria-label="Lugares para descubrir">
+      <div class="strip-heading"><p class="eyebrow">LUGARES QUE INSPIRAN</p><span>LA PENÍNSULA, A TU RITMO</span></div>
+      <div class="destination-list">
+        <a href="#contacto"><span>01</span><strong>Valladolid</strong><small>Yucatán</small><b>↗</b></a>
+        <a href="#contacto"><span>02</span><strong>Bacalar</strong><small>Quintana Roo</small><b>↗</b></a>
+        <a href="#contacto"><span>03</span><strong>Tulum</strong><small>Quintana Roo</small><b>↗</b></a>
+        <a href="#contacto"><span>04</span><strong>Campeche</strong><small>Campeche</small><b>↗</b></a>
+      </div>
+      <p class="catalog-note">Selección inspiracional de destinos; las rutas y actividades se confirman de acuerdo con cada solicitud.</p>
+    </section>
+
     <section class="manifesto section-wrap">
       <p class="eyebrow">NUESTRA FILOSOFÍA</p>
       <h2>Conecta<span>.</span> Descubre<span>.</span><br><em>Trasciende.</em></h2>
       <p>Viajar es abrir la mirada, respetar lo que nos rodea y regresar con algo nuevo. Esa es la esencia de Mayan Nomads.</p>
     </section>
 
+    <section class="journey section-wrap">
+      <div class="section-kicker">04 / ASÍ COMIENZA</div>
+      <div class="journey-main">
+        <div><p class="eyebrow">SENCILLO DESDE EL PRIMER MENSAJE</p><h2>Tu viaje empieza<br><em>con una idea.</em></h2></div>
+        <div class="journey-steps">
+          <article><span>01</span><div><h3>Cuéntanos qué imaginas</h3><p>Comparte el destino, las fechas y el tipo de experiencia que te gustaría vivir.</p></div></article>
+          <article><span>02</span><div><h3>Preparamos una propuesta</h3><p>Revisamos opciones, detalles, condiciones y disponibilidad contigo.</p></div></article>
+          <article><span>03</span><div><h3>Confirma y disfruta</h3><p>Una vez confirmados los detalles, tendrás la información necesaria para tu experiencia.</p></div></article>
+        </div>
+      </div>
+    </section>
+
     <section class="travel-link">
       <div class="travel-mark">SV <span>×</span> MN</div>
       <div><p class="eyebrow">UN VIAJE, UNA EXPERIENCIA COMPLETA</p><h2>Nosotros te acercamos.<br><em>Tú haces que suceda.</em></h2><p>Mayan Nomads forma parte del universo Shuttle Vacation. Conectamos transporte y experiencias para que disfrutes cada momento de tu viaje.</p></div>
-      <a class="button button-dark" href="https://shuttlevacation.com" target="_blank" rel="noopener">Conoce Shuttle Vacation <span>↗</span></a>
+      <a class="button button-dark" href="https://shuttlevacation.com" target="_blank" rel="noopener noreferrer">Conoce Shuttle Vacation <span>↗</span></a>
+    </section>
+
+    <section class="faq section-wrap" id="preguntas">
+      <div><div class="section-kicker">05 / ANTES DE EXPLORAR</div><p class="eyebrow">PREGUNTAS FRECUENTES</p><h2>Lo que necesitas<br><em>saber.</em></h2></div>
+      <div class="faq-list">
+        <details><summary>¿Cómo puedo consultar una experiencia?<span>+</span></summary><p>Envíanos tu destino de interés, fecha tentativa y número de viajeros mediante el formulario. Nuestro equipo revisará las opciones disponibles y te responderá por WhatsApp.</p></details>
+        <details><summary>¿Los tours tienen precio publicado?<span>+</span></summary><p>En esta etapa no publicamos tarifas genéricas. El precio depende de la experiencia, fecha, número de personas, inclusiones y condiciones del operador. Te compartiremos una propuesta antes de confirmar.</p></details>
+        <details><summary>¿Puedo solicitar transporte además de una experiencia?<span>+</span></summary><p>Sí. Mayan Nomads forma parte de Shuttle Vacation. Puedes indicarnos si también necesitas transporte privado para revisar esa opción junto con tu solicitud.</p></details>
+        <details><summary>¿Mi solicitud confirma una reservación?<span>+</span></summary><p>No. Enviar el formulario únicamente inicia una consulta por WhatsApp. La reservación queda confirmada solo cuando nuestro equipo te comunica expresamente la disponibilidad y los detalles finales.</p></details>
+      </div>
     </section>
 
     <section class="contact-section" id="contacto">
-      <div class="section-kicker light">04 / TU HISTORIA COMIENZA AQUÍ</div>
+      <div class="section-kicker light">06 / TU HISTORIA COMIENZA AQUÍ</div>
       <p class="eyebrow light">¿LISTO PARA DESCUBRIR?</p>
       <h2>El siguiente recuerdo<br>puede estar <em>más cerca.</em></h2>
       <p>Cuéntanos qué te gustaría vivir. Te ayudaremos a encontrar una experiencia que conecte contigo.</p>
-      <a class="button button-light" href="https://wa.me/529981182783?text=Hola%2C%20quiero%20conocer%20las%20experiencias%20de%20Mayan%20Nomads." target="_blank" rel="noopener">Hablemos de tu viaje <span>↗</span></a>
+      <form class="inquiry-form" id="inquiry-form">
+        <label>¿Cómo te llamas?<input name="name" autocomplete="name" required maxlength="80" placeholder="Tu nombre"></label>
+        <label>¿Qué destino te interesa?<select name="destination" required><option value="">Selecciona un destino</option><option>Valladolid</option><option>Bacalar</option><option>Tulum</option><option>Campeche</option><option>Otro / Estoy explorando</option></select></label>
+        <div class="form-row">
+          <label>Fecha tentativa<input type="date" name="date" id="travel-date"></label>
+          <label>Viajeros<input type="number" name="travelers" min="1" max="30" value="2" required></label>
+        </div>
+        <label>¿Qué te gustaría vivir?<select name="interest"><option>Quiero conocer opciones</option><option>Naturaleza y cenotes</option><option>Cultura e historia</option><option>Aventura</option><option>Agua y costa</option><option>Experiencia personalizada</option><option>También necesito transporte</option></select></label>
+        <label>Cuéntanos un poco más<textarea name="message" rows="3" maxlength="600" placeholder="Fechas flexibles, ocasiones especiales, detalles que debamos conocer..."></textarea></label>
+        <button class="button button-light form-submit" type="submit">Enviar consulta por WhatsApp <span>↗</span></button>
+        <p class="form-disclaimer">Tu mensaje se abrirá en WhatsApp para que puedas revisarlo y enviarlo. Esta solicitud no confirma una reservación.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">MN</span><span class="brand-name">MAYAN NOMADS<small>BY SHUTTLE VACATION</small></span></a>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">MN</span><span class="brand-name">MAYAN NOMADS<small>BY SHUTTLE VACATION</small></span></a>
     <span>© <span id="year"></span> MAYAN NOMADS. TODOS LOS DERECHOS RESERVADOS.</span>
-    <a href="#inicio">VOLVER ARRIBA ↑</a>
+    <div class="footer-links"><a href="privacy.html">Privacidad</a><a href="#top">Volver arriba ↑</a></div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
