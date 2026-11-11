@@ -2,6 +2,11 @@
 
 Aplicación web Node.js de Mayan Nomads, marca de experiencias y descubrimiento vinculada a Shuttle Vacation.
 
+## Identidad visual
+- Estructura de navegación y secciones inspirada en la experiencia web de Shuttle Vacation, conservando el contenido propio de Mayan Nomads.
+- Paleta: negro carbón, marfil, café oscuro y naranja quemado; sin aqua ni amarillo.
+- Tipografías: Bebas Neue para titulares y Montserrat para texto e interfaz.
+
 ## Stack
 - Node.js 20 o superior.
 - Express 5 como servidor HTTP.
