@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mayannomads.shuttlevacation.com/sitemap.xml
