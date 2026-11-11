@@ -1,23 +1,42 @@
 # Mayan Nomads by Shuttle Vacation
 
-Sitio web estático de Mayan Nomads, marca de experiencias y descubrimiento vinculada a Shuttle Vacation.
+Aplicación web Node.js de Mayan Nomads, marca de experiencias y descubrimiento vinculada a Shuttle Vacation.
 
 ## Stack
-- HTML semántico, CSS y JavaScript vanilla.
-- Sin framework, build step, base de datos ni dependencias de servidor.
+- Node.js 20 o superior.
+- Express 5 como servidor HTTP.
+- HTML semántico, CSS y JavaScript vanilla para la interfaz.
 - Adaptable a móvil, tablet y escritorio.
 - El formulario prepara una consulta y abre WhatsApp; no confirma reservas ni almacena datos en este sitio.
 
+## Ejecutar localmente
+```bash
+npm install
+npm start
+```
+
+La aplicación escucha en el puerto indicado por `PORT` (por defecto 3000). Incluye un endpoint de estado en `/health`.
+
 ## Estructura
-- `index.html`: página principal, experiencias, destinos, preguntas frecuentes y formulario de consulta.
+- `server.js`: servidor Express, publicación de archivos estáticos y endpoint de salud.
+- `package.json`: metadatos, dependencia y comando de inicio.
+- `index.html`: página principal, experiencias, destinos, preguntas frecuentes y formulario.
 - `styles.css`: sistema visual responsive.
 - `script.js`: navegación móvil, filtros y envío de consulta a WhatsApp.
 - `privacy.html`: aviso informativo de privacidad.
 - `404.html`: página de recurso no encontrado.
 - `favicon.svg`: icono provisional tipográfico.
 
-## Publicación
-El sitio puede servirse desde cualquier hosting estático que publique el contenido de la raíz del repositorio. No requiere instalación ni compilación. Configurar el document root en la raíz del repositorio y activar HTTPS en el proveedor de hosting.
+## Despliegue en Hostinger
+- Tipo de aplicación: Node.js.
+- Versión de Node.js: 20 o superior.
+- Rama: `main`.
+- Directorio de aplicación: raíz del repositorio.
+- Comando de instalación: `npm install` (o el automático de Hostinger).
+- Comando de inicio: `npm start`.
+- Variable de puerto: usar el puerto asignado por Hostinger mediante `PORT`; no fijarlo manualmente.
+
+No se requiere comando de build porque la interfaz usa HTML, CSS y JavaScript vanilla.
 
 ## Configuración comercial pendiente antes de anunciar ventas
 1. Validar el catálogo real de tours, operadores, inclusiones, restricciones y disponibilidad.
